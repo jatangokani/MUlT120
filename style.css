@@ -1,3 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.ingredients, ul{
+    margin-left: 10px;
+}
+
+.steps, .ingredients{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;;
+}
+
+.ingredients, .steps {
+    margin-top: 20px;
+}
+
+.ingredients h2, .steps h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ingredients ul, .steps ol {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients li, .steps li {
+    margin-bottom: 8px;
+}
+
+.ingredients li::before {
+    content: "•";
+    color: #333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.steps li::before {
+    content: counter(step) ". ";
+    counter-increment: step;
+    color: #333;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.ingredients, .steps, .chefsNotes, .nutrition, .image {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+span{
+    color: #ff0808;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 table, th, td {
     border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
 }
